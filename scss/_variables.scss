@@ -1,0 +1,34 @@
+@mixin display($display: flex, $align: center, $justify: space-between) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin textStyle($font-s: 0px, $font-w: 0, $text-a: start, $color: #FFF, $line-h: 0px,$align:start) {
+    font-size: $font-s;
+    font-weight: $font-w;
+    text-align: $text-a;
+    color: $color;
+    line-height: $line-h;
+    align-items: $align;
+    
+
+}
+
+
+    @mixin btn($width: 110px, $padding: 10px 23px 9px 25px, $border-radius: 4px, $bg-color: #02897A, $color: #FFF, $border: 1px solid #02897A) {
+        width: $width;
+        padding: $padding;
+        border-radius: $border-radius;
+        background-color: $bg-color;
+        color: $color;
+        border: $border;
+        transition: all 0.4s ease;
+        
+
+        &:hover{
+            background-color: transparent;
+            color: $bg-color;
+        }
+    }
+

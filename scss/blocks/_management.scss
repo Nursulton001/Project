@@ -1,0 +1,177 @@
+.management-section {
+    padding: 169px 0px 150px 0px;
+}
+
+.management {
+    @include display($justify: space-between, $align: center, );
+}
+
+.management__left {
+    max-width: 426px;
+}
+
+.management__strong__top {
+    @include textStyle($font-s: 16px, $font-w: 600, $line-h: normal, $color: #22343D);
+    margin-bottom: 8px;
+}
+
+.management__left__title {
+    @include textStyle($font-s: 32px, $font-w: 700, $line-h: normal, $color: #22343D);
+    margin-bottom: 134px;
+}
+
+.management__strong__center {
+    @include textStyle($font-s: 16px, $font-w: 600, $line-h: 26px, $color: #22343D);
+    margin-bottom: 12px;
+}
+
+.management__left__center__text {
+    @include textStyle($color: #22343D, $font-s: 16px, $font-w: 400, $line-h: 26px);
+    margin-bottom: 25px;
+}
+
+.management__strong__bottom {
+    @include textStyle($font-s: 16px, $font-w: 600, $line-h: 26px, $color: #22343D);
+    margin-bottom: 12px;
+}
+
+.management__left__center__bottom {
+    @include textStyle($color: #22343D, $font-s: 16px, $font-w: 400, $line-h: 26px);
+}
+
+
+
+@media (max-width:1050px) {
+    .management__right__img {
+        width: 500px;
+        height: 455px;
+    }
+
+    .management__strong__top {
+        @include textStyle($font-s: 13px, $font-w: 600, $line-h: normal, $color: #22343D);
+        margin-bottom: 8px;
+    }
+
+    .management__left__title {
+        @include textStyle($font-s: 28px, $font-w: 700, $line-h: normal, $color: #22343D);
+        margin-bottom: 64px;
+    }
+
+    .management__strong__center {
+        @include textStyle($font-s: 16px, $font-w: 600, $line-h: 26px, $color: #22343D);
+        margin-bottom: 12px;
+    }
+
+    .management__left__center__text {
+        @include textStyle($color: #22343D, $font-s: 16px, $font-w: 400, $line-h: 26px);
+        margin-bottom: 25px;
+    }
+
+    .management__strong__bottom {
+        @include textStyle($font-s: 16px, $font-w: 600, $line-h: 26px, $color: #22343D);
+        margin-bottom: 12px;
+    }
+
+    .management__left__bottom__text{
+        @include textStyle($color: #22343D, $font-s: 16px, $font-w: 400, $line-h: 26px);
+    }
+
+    .management__left {
+        max-width: 330px;
+    }
+
+
+
+}
+
+@media (max-width:950px) {
+    .management__right__img {
+        width: 410px;
+        height: 385px;
+    }
+}
+
+@media (max-width:790px) {
+    .management-section {
+        padding: 100px 0px 100px 0px;
+    }
+
+    .management {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+
+
+    .management__right__img {
+        margin-bottom: 50px;
+        width: 490px;
+        height: 400px;
+
+    }
+
+
+
+    .management__left__title {
+        @include textStyle($font-s: 28px, $font-w: 700, $line-h: normal, $color: #22343D);
+        text-align: center;
+    }
+
+    
+    .management__left__center__text {
+        @include textStyle($color: #22343D, $font-s: 16px, $font-w: 400, $line-h: 26px);
+        text-align: center;
+    }
+    .management__left__bottom__text {
+        @include textStyle($color: #22343D, $font-s: 16px, $font-w: 400, $line-h: 26px);
+        text-align: center;
+    }
+}
+
+@media (max-width:520px) {
+    .management__right__img {
+        margin-bottom: 50px;
+        width: 390px;
+        height: 300px;
+
+    }
+}
+
+@media (max-width:410px) {
+    .management__right__img {
+        width: 350px;
+        height: 330px;
+    }
+    .management{
+        text-align: start;
+    }
+
+    .management__left__title{
+        text-align: start;
+        margin-bottom: 16px;
+    }
+    .management__left__center__text {
+       text-align: start;
+       margin-bottom: 16px;
+       
+    }
+    
+    .management__left__bottom__text{
+        text-align: start;
+    }
+}
+
+@media (max-width:370px) {
+    .management__right__img {
+        width: 320px;
+        height: 300px;
+    }
+}
+
+@media (max-width:340px) {
+    .management__right__img {
+        width: 300px;
+        height: 280px;
+    }
+
+}

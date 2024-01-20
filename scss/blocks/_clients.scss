@@ -1,0 +1,94 @@
+.clients-section {
+    padding: 0px 0px 150px 0px;
+}
+
+.clients {
+}
+.clients__title__wrap {
+    max-width: 537px;
+    margin: 0 auto;
+}
+.clients__title {
+    @include textStyle($font-s:34px,$font-w:700,$line-h:57px,$color:#22343D,$text-a:center);
+}
+.clients__text {
+    @include textStyle($font-s:16px,$font-w:500,$line-h:28px,$text-a:center,$color:#22343D);
+    margin-bottom: 50px;
+
+}
+.clients__about__boxes {
+    @include display()
+}
+.clients__about__box {
+    width: 327px;
+    padding: 10px;
+    box-shadow: 0px 0px 4px 2px rgb(215, 215, 215);
+    border-radius: 5px;
+    padding: 28px 26px 23px 26px;
+}
+.clientas__about__img {
+    margin-bottom: 16px;
+}
+.clients__about__text {
+    margin-bottom: 16px;
+}
+.clients__about__name {
+    @include display($justify:none);
+}
+.clientas__about__name__img {
+}
+.clientas__about__name__text {
+    @include textStyle($font-s:16px,$font-w:600,$line-h:24px,$color:#02897A);
+    margin-left: 14px;
+    
+}
+.clientas__about__name__hobby {
+    @include textStyle($font-s:14px,$font-w:500,$line-h:24px,$color:#22343D);
+    margin-left: 14px;
+    
+}
+@media (max-width:1070px){
+    .clients__about__box {
+        width: 287px;
+        padding: 10px;
+        box-shadow: 0px 0px 4px 2px rgb(215, 215, 215);
+        border-radius: 5px;
+        padding: 18px 16px 13px 16px;
+    }
+}
+
+@media (max-width:980px){
+    .clients__about__box {
+        width: 487px;
+        padding: 10px;
+        box-shadow: 0px 0px 4px 2px rgb(215, 215, 215);
+        border-radius: 5px;
+        padding: 68px 46px 68px 46px;
+        margin-bottom: 32px;
+    }
+    .clients__about__boxes {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:580px){
+    .clients__about__box {
+        width: 387px;
+        padding: 10px;
+        box-shadow: 0px 0px 4px 2px rgb(215, 215, 215);
+        border-radius: 5px;
+        padding: 48px 46px 48px 46px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width:430px){
+    .clients__about__box {
+        width: 307px;
+        padding: 10px;
+        box-shadow: 0px 0px 4px 2px rgb(215, 215, 215);
+        border-radius: 5px;
+        padding: 28px 26px 23px 26px;
+        margin-bottom: 32px;
+    }
+}

@@ -1,0 +1,80 @@
+.join-section {
+    padding: 0px 0px 150px 0px;
+}
+
+.join {
+    max-width: 908px;
+    padding: 14px 36px 16px 51px;
+    background-color: #02897A;
+    margin: 0 auto;
+    border-radius: 32px;
+    @include display($align: none);
+}
+
+.join__left {}
+
+.join__left__title {
+    @include textStyle($font-s: 32px, $font-w: 600, $line-h: 151%, $color: #FFF);
+    margin-bottom: 70px;
+    padding: 49px 0px 0px 0px;
+
+}
+
+.join__left__btn {
+    @include btn($padding: 13px 35px 7px 33px, $bg-color: #fff, $width: 160px);
+    @include textStyle($font-s: 20px, $font-w: 600, $color: #02897A, $line-h: normal);
+
+}
+
+.join__left__btn:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+.join__right {}
+
+.join__right__img {}
+
+@media (max-width:980px) {
+    .join {
+        max-width: 868px;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .join__left__title {
+        @include textStyle($font-s: 32px, $font-w: 600, $line-h: 151%, $color: #FFF,$text-a:center);
+        margin-bottom: 70px;
+        padding: 49px 0px 0px 0px;
+
+    }
+    .join__right__img {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+@media (max-width:620px){
+    .join__right__img {
+        width: 100%;
+        height: 320px;
+        text-align: center;
+    }
+    .join {
+        max-width: 468px;
+        flex-direction: column;
+        text-align: center;
+
+    }
+}
+
+@media (max-width:460px){
+    .join__right__img {
+        width: 100%;
+        height: 300px;
+    }
+    .join__left__title {
+        @include textStyle($font-s: 28px, $font-w: 600, $line-h: 151%, $color: #FFF,$text-a:center);
+
+    }
+}

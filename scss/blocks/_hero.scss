@@ -1,0 +1,226 @@
+.hero-section {
+    padding: 25px 0px 114px 0px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__left {
+    max-width: 390px;
+}
+
+.hero__left__title {
+    @include textStyle($font-s: 40px, $font-w: 700, $color: #22343D, $line-h: 60px);
+    margin-bottom: 18px;
+}
+
+.hero__left__text {
+    @include textStyle($font-s: 18px, $font-w: 400, $color: #22343D, $line-h: 28px);
+    margin-bottom: 45px;
+}
+
+.hero__left__btn {}
+
+.hero__left__get-started {
+    @include btn($padding: 15px 41px 14px 41px)
+}
+
+.hero__left__watch-video {
+    position: relative;
+    margin-left: 50px;
+    text-align: center;
+    color: #02897A;
+
+}
+
+.hero__left__watch-video:before {
+    content: "";
+    width: 20px;
+    height: 17px;
+    left: -25px;
+    background-image: url(../images/play-logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: 100%;
+    position: absolute;
+}
+
+.hero__left__watch-video:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5px;
+    background-color: #02897A;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+@media (max-width:1050px) {
+    .hero__right__img {
+        width: 500px;
+        height: 455px;
+    }
+
+
+    .hero__left__title {
+        @include textStyle($font-s: 35px, $font-w: 700, $color: #22343D, $line-h: 50px);
+    }
+
+    .hero__left__text {
+        @include textStyle($font-s: 14px, $font-w: 400, $color: #22343D, $line-h: 28px);
+    }
+
+    .hero__left__get-started {
+        @include btn($padding: 12px 30px 11px 30px)
+    }
+
+    .hero__left__watch-video {
+        position: relative;
+        margin-left: 35px;
+        text-align: center;
+        color: #02897A;
+
+    }
+
+    .hero__left__watch-video:before {
+        content: "";
+        width: 18px;
+        height: 15px;
+        left: -25px;
+        background-image: url(../images/play-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: 100%;
+        position: absolute;
+    }
+
+    .hero__left__watch-video:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        background-color: #02897A;
+        bottom: 0;
+        left: 0;
+    }
+
+}
+
+@media (max-width:950px) {
+    .hero__right__img {
+        width: 420px;
+        height: 395px;
+    }
+}
+
+@media (max-width:790px) {
+    .hero__left {
+        max-width: 329px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero__right__img {
+        margin-bottom: 10px;
+        width: 488px;
+        height: 450px;
+    }
+
+    .hero__left__title {
+        @include textStyle($font-s: 34px, $font-w: 700, $color: #22343D, $line-h: 60px, $text-a: center);
+        margin-bottom: 18px;
+    }
+
+    .hero__left__text {
+        @include textStyle($font-s: 16px, $font-w: 400, $color: #22343D, $line-h: 28px, $text-a: center);
+        margin-bottom: 45px;
+    }
+
+    .hero__left__btn {
+        text-align: center;
+
+    }
+
+    .hero__left__get-started {
+        @include btn($padding: 15px 24px 14px 25px)
+    }
+
+    .hero__left__watch-video {
+        position: relative;
+        margin-left: 40px;
+        text-align: center;
+        color: #02897A;
+        font-size: 14px;
+
+    }
+
+    .hero__left__watch-video:before {
+        content: "";
+        width: 20px;
+        height: 17px;
+        left: -25px;
+        background-image: url(../images/play-logo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: 100%;
+        position: absolute;
+    }
+
+    .hero__left__watch-video:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        background-color: #02897A;
+        bottom: 0;
+        left: 0;
+    }
+
+
+}
+
+@media (max-width:520px) {
+    .hero__right__img {
+        margin-bottom: 50px;
+        width: 390px;
+        height: 350px;
+
+    }
+}
+
+
+@media (max-width:410px) {
+    .hero__right__img {
+        width: 350px;
+        height: 330px;
+    }
+}
+
+@media (max-width:370px) {
+    .hero__right__img {
+        width: 320px;
+        height: 300px;
+    }
+}
+
+@media (max-width:340px) {
+    .hero__right__img {
+        width: 300px;
+        height: 280px;
+    }
+
+}
+
+@media (max-width:333px) {
+    .hero__left__title {
+        @include textStyle($font-s: 30px, $font-w: 700, $color: #22343D, $line-h: 60px, $text-a: center);
+        margin-bottom: 18px;
+    }
+}
